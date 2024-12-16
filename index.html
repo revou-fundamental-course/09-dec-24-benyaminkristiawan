@@ -5,8 +5,257 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\main.css">
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
+    <header>
+        <img alt="Logo"  src="assets/logo-neronyaa.png" />
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Our Package</a>
+            <a href="#">Call Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-header">
+            <h1 class="animate-left">Sweet moments, freshly baked with love</h1>
+
+            <p class="animate-right">Perfect delights to make every day special.</p>
+
+            <a class="btn animate-left" href="#">Order Now</a>
+
+            <div class="social-icons">
+                <a href="#">
+                    <i class="fab fa-whatsapp animate-left"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram animate-right"></i>
+                </a>
+            </div>
+
+            <!-- Home Content -->
+            <section class="main-container">
+
+                <!-- Banner AutoSlide Content -->
+                <aside class="main-item animate-left">
+                    <div class="slider ">
+                        <div class="slide show">
+                            <img src="assets/roti1.jpg" alt="Gambar 1">
+                            <p>Neronyaa Baguette</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/roti2.jpg" alt="Gambar 2">
+                            <p>Neronyaa Paneton</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/roti3.jpg" alt="Gambar 3">
+                            <p>Neronyaa Choux</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/roti4.jpg" alt="Gambar 4">
+                            <p>Neronyaa Bolen</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="main-item">
+                    <h3>Contact Us</h3>
+                    <p>Sales will contact you 1x24 hours after we receive the data.</p>
+                    <form>
+                        <div class="input-group" style="margin-right: 20px;">
+                            <label for="name">First and Last Name</label>
+                            <input id="name" placeholder="First and last name" type="text"/>
+                        </div>
+                
+                        <div class="input-group" style="margin-right: 20px;">
+                            <label for="email">Email</label>
+                            <input id="email" placeholder="example@email.com" type="email"/>
+                        </div>
+                
+                        <div class="input-group">
+                            <label for="options">Select Option</label>
+                            <select id="options">
+                                <option value="">Select option</option>
+                                <option value="bolen">Bolen</option>
+                                <option value="brownies">Brownies</option>
+                                <option value="cookies">Cookies</option>
+                            </select>
+                        </div>
+                
+                        <button type="submit">SEND</button>
+                    </form>
+                </aside>
+            </section>
+        </section>
+
+        <section class="testimonial-section">
+            <h2 class="animate-left">
+                Our Testimonial
+            </h2>
+            <div class="testimonial-slider animate-right">
+                <div class="testimonial-slides">
+                    <div class="testimonial-slide">
+                        <img alt="Testimonial image" src="assets/testi-1.jpg"/>
+                        <div class="testimonial-quote">
+                            "Rotinya Enak, Rasanya Mantap"
+                        </div>
+                        <div class="testimonial-author">
+                            Florence Hughes, 28
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <img alt="Testimonial image" src="assets/testi-2.jpg"/>
+                        <div class="testimonial-quote">
+                            "Wangi roti yang membuat nostalgia!"
+                        </div>
+                        <div class="testimonial-author">
+                            John Doe, 35
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <img alt="Testimonial image" src="assets/testi-3.jpg"/>
+                        <div class="testimonial-quote">
+                            "Harga Terjangkau, Yang buat juga cantik!"
+                        </div>
+                        <div class="testimonial-author">
+                            Benyamin Kristiawan Aliwinoto, 23
+                        </div>
+                    </div>
+              
+             </div>
+            </div>
+        </section>
+
+        <section class="our-story">
+            <div class="container">
+                <div class="row">
+                    <div class="description padding-right animate-left">
+                        <div class="global-headline">
+                            <h2 class="sub-headline">
+                                Discover
+                            </h2>
+                            <h3 class="headline headline-dark">Our Story</h3>
+                            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                        </div>
+                        <p>Established in 2020 and located in Kuningan, West Java, our bakery started from a passion for baking
+                             cakes and bread. What began as a simple hobby soon turned into a pre-order bakery business, fueled
+                              by the joy of creating homemade treats. Every process, from mixing to baking, is done with 
+                              dedication—entirely by myself, with the loving support of my mother. 
+                              Over time, our signature product, the bolen, has become a favorite among our customers, 
+                              earning a special place in their hearts and kitchens.</p>
+                        <a href="index.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="image animate-right">
+                        <img class="story-img" src="assets/neronyaa-owner.jpeg" alt="bread">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <!-- MENU SECTION -->
+        <section class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="image-group padding-right animate-left">
+                        <div class="card">
+                            <img src="assets/collection-img1.jpg" alt="image">
+                            <div class="card__content">
+                                <p class="card__title">Bolen Signature Delight</p>
+                                <p class="card__description">Our bestselling bolen, made with soft, flaky pastry filled with perfectly sweet and creamy layers. A timeless classic that melts in your mouth, perfect for every occasion.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/collection-img2.jpg" alt="image">
+                            <div class="card__content">
+                                <p class="card__title">Decadent Chocolate Brownies</p>
+                                <p class="card__description">Indulge in the richness of our classic chocolate brownies. Soft, fudgy, and perfectly sweet, these are a chocolate lover’s dream come true.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/collection-img3.jpg" alt="image">
+                            <div class="card__content">
+                                <p class="card__title">Double Delight Brownies</p>
+                                <p class="card__description">A perfect blend of crunchy almonds and crispy chocolate pieces on a rich, fudgy brownie base. Two irresistible flavors combined for double the joy in every bite.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/collection-img4.jpeg" alt="image">
+                            <div class="card__content">
+                                <p class="card__title">Flavorful Assorted Cookies</p>
+                                <p class="card__description">Treat yourself to a delightful variety of cookies in four unique flavors—Red Velvet, Matcha, Oreo, and Original. Each bite is crafted to perfection for a burst of flavor and crunch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description animate-right">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            Explore
+                        </h2>
+                        <h3 class="headline headline-dark">Menu</h3>
+                    </div>
+                    <p>Discover the perfect blend of flavors and textures in every bite. From our signature bolen to indulgent brownies and flavorful cookies, every treat is made with love and crafted to perfection. Let your taste buds embark on a delightful journey!</p>
+                    <a href="index.html" class="btn btn-secondary">See Full Menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-sellers">
+            <h2>
+                OUR BEST SELLERS
+            </h2>
+            <div class="products">
+                <div class="product">
+                    <img alt="3-tier red velvet cake" height="200" src="https://storage.googleapis.com/a1aa/image/HVyhjTV269qpFd7vnDt472ZJSrN55DQ4b4yDoLAyLSqCpreJA.jpg" width="300"/>
+                    <h3>3-tier red velvet cake</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+                    <div class="price">45.90 €</div>
+                    <a class="btn" href="#">
+                        Add to Cart
+                    </a>
+                </div>
+
+                <div class="product">
+                    <img alt="3-tier red velvet cake" height="200" src="https://storage.googleapis.com/a1aa/image/HVyhjTV269qpFd7vnDt472ZJSrN55DQ4b4yDoLAyLSqCpreJA.jpg" width="300"/>
+                    <h3>3-tier red velvet cake</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+                    <div class="price">45.90 €</div>
+                    <a class="btn" href="#">
+                        Add to Cart
+                    </a>
+                </div>
+
+                <div class="product">
+                    <img alt="3-tier red velvet cake" height="200" src="https://storage.googleapis.com/a1aa/image/HVyhjTV269qpFd7vnDt472ZJSrN55DQ4b4yDoLAyLSqCpreJA.jpg" width="300"/>
+                    <h3>3-tier red velvet cake</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+                    <div class="price">45.90 €</div>
+                    <a class="btn" href="#">
+                        Add to Cart
+                    </a>
+                </div>
+
+            </div>
+           </section>
+    </main>
     
+    <footer>
+        <p>© 
+            <span>Copyright</span>
+            <strong>Neronyaa</strong>
+            <span>All Rights Reserved.</span>
+        </p>
+        <div class="credits">
+            Designed & Created By
+            <a href="https://github.com/benyaminkristiawan">benyaminkristiawan</a>
+        </div>
+    </footer>
 </body>
 </html>
