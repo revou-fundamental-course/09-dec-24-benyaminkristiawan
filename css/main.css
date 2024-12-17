@@ -149,6 +149,40 @@ button {
 button:hover {
     background-color: #c49c9c; 
 }
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+.toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
 
 .slider {
     position: relative;
@@ -375,7 +409,6 @@ button:hover {
     color: #777;
     line-height: 1.4;
 }
-  
 
 .menu .row {
     display: flex;
@@ -399,6 +432,7 @@ button:hover {
 .best-sellers {
     padding: 50px 20px;
     background-color: #f9f9f9;
+    margin-bottom: 40px;
 }
 .best-sellers h2 {
     text-align: center;
@@ -463,17 +497,188 @@ button:hover {
         align-items: center;
     }
 }
+
+/* Footer Styling Utama */
 footer {
+    background-color: #d4a5a5; /* Warna latar belakang footer */
+    color: #ffffff; /* Warna teks */
+    padding: 2rem 0;
+    position: relative;
+    text-align: center;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    background-color: #d4a5a5;
+    border-radius: 50%;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    width: 7rem;
+    height: 7rem;
+    transform: translateX(-50%);
+}
+
+.back-to-top i {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 2rem;
+    animation: showsUp 2s infinite;
+}
+
+/* Container - Bagian Newsletter */
+.container {
     text-align: center;
     padding: 20px;
-    background-color: #ffffff;
-    border-top: 1px solid #dee2e6;
 }
-.footer .a {
-    color: aliceblue;
+
+.container h1 {
+    /* font-family: 'Pacifico', cursive; */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #e0b4b1;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #f7a0a0;
+    color: #ffffff;
+}
+
+/* Footer Content */
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.container {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    padding: 2rem;
+    max-width: 600px; 
+    margin: 0 auto; 
+    gap: 2rem; 
+}
+
+.container img {
+    height: auto; 
+    width: 150px;
+    object-fit: contain;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 1rem; 
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    flex: 1; 
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f7a0a0;
+    color: #ffffff;
+    border: 1px solid #f7a0a0af;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #f7a0a0af;
+}
+
+
+
+
+.footer .credits {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.footer .credits a {
+    color: rgb(122, 122, 239);
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
+
+.footer .credits a:hover {
+    color: whitesmoke;
+}
+
+/* Social Media Icons */
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer .social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #eee;
+}
+
 
 /*          ANIMATIONS           */
 

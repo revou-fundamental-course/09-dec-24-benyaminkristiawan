@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <header>
+    <header id="header">
         <img alt="Logo"  src="assets/logo-neronyaa.png" />
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Our Package</a>
-            <a href="#">Call Us</a>
+            <a href="#header">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#callus">Call Us</a>
         </nav>
     </header>
 
@@ -62,18 +62,20 @@
                     </div>
                 </aside>
 
-                <aside class="main-item">
+                <aside id="callus" class="main-item animate-right">
                     <h3>Contact Us</h3>
                     <p>Sales will contact you 1x24 hours after we receive the data.</p>
-                    <form>
+                    <form id="contactForm">
                         <div class="input-group" style="margin-right: 20px;">
                             <label for="name">First and Last Name</label>
                             <input id="name" placeholder="First and last name" type="text"/>
+                            <span class="error-message" id="nameError"></span>
                         </div>
                 
                         <div class="input-group" style="margin-right: 20px;">
                             <label for="email">Email</label>
                             <input id="email" placeholder="example@email.com" type="email"/>
+                            <span class="error-message" id="emailError"></span>
                         </div>
                 
                         <div class="input-group">
@@ -84,11 +86,16 @@
                                 <option value="brownies">Brownies</option>
                                 <option value="cookies">Cookies</option>
                             </select>
+                            <span class="error-message" id="optionsError"></span>
                         </div>
                 
                         <button type="submit">SEND</button>
                     </form>
+                
+                    <!-- Toast message -->
+                    <div id="toast" class="toast"></div>
                 </aside>
+                
             </section>
         </section>
 
@@ -132,7 +139,7 @@
         </section>
 
         <section class="our-story">
-            <div class="container">
+            <div class="section-container">
                 <div class="row">
                     <div class="description padding-right animate-left">
                         <div class="global-headline">
@@ -160,8 +167,8 @@
         
         
         <!-- MENU SECTION -->
-        <section class="menu">
-            <div class="container">
+        <section id="menu" class="menu">
+            <div class="section-container">
                 <div class="row">
                     <div class="image-group padding-right animate-left">
                         <div class="card">
@@ -169,6 +176,7 @@
                             <div class="card__content">
                                 <p class="card__title">Bolen Signature Delight</p>
                                 <p class="card__description">Our bestselling bolen, made with soft, flaky pastry filled with perfectly sweet and creamy layers. A timeless classic that melts in your mouth, perfect for every occasion.</p>
+                                <p class="card__price">Rp. 25000</p>
                             </div>
                         </div>
                         <div class="card">
@@ -176,6 +184,7 @@
                             <div class="card__content">
                                 <p class="card__title">Decadent Chocolate Brownies</p>
                                 <p class="card__description">Indulge in the richness of our classic chocolate brownies. Soft, fudgy, and perfectly sweet, these are a chocolate lover’s dream come true.</p>
+                                <p class="card__price">Rp. 27000</p>
                             </div>
                         </div>
                         <div class="card">
@@ -183,6 +192,7 @@
                             <div class="card__content">
                                 <p class="card__title">Double Delight Brownies</p>
                                 <p class="card__description">A perfect blend of crunchy almonds and crispy chocolate pieces on a rich, fudgy brownie base. Two irresistible flavors combined for double the joy in every bite.</p>
+                                <p class="card__price">Rp. 30000</p>
                             </div>
                         </div>
                         <div class="card">
@@ -190,6 +200,7 @@
                             <div class="card__content">
                                 <p class="card__title">Flavorful Assorted Cookies</p>
                                 <p class="card__description">Treat yourself to a delightful variety of cookies in four unique flavors—Red Velvet, Matcha, Oreo, and Original. Each bite is crafted to perfection for a burst of flavor and crunch.</p>
+                                <p class="card__price">Rp. 35000</p>
                             </div>
                         </div>
                     </div>
@@ -213,30 +224,30 @@
             </h2>
             <div class="products">
                 <div class="product">
-                    <img alt="3-tier red velvet cake" height="200" src="https://storage.googleapis.com/a1aa/image/HVyhjTV269qpFd7vnDt472ZJSrN55DQ4b4yDoLAyLSqCpreJA.jpg" width="300"/>
-                    <h3>3-tier red velvet cake</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-                    <div class="price">45.90 €</div>
+                    <img alt="3-tier red velvet cake" height="200" src="assets/best-1.jpg" width="300"/>
+                    <h3>Raspberry Streusel</h3>
+                    <p>A delightful crumbly pastry topped with fresh raspberry filling and buttery streusel, creating the perfect balance of sweetness in every bite.</p>
+                    <div class="price">Rp. 65.000</div>
                     <a class="btn" href="#">
                         Add to Cart
                     </a>
                 </div>
 
                 <div class="product">
-                    <img alt="3-tier red velvet cake" height="200" src="https://storage.googleapis.com/a1aa/image/HVyhjTV269qpFd7vnDt472ZJSrN55DQ4b4yDoLAyLSqCpreJA.jpg" width="300"/>
-                    <h3>3-tier red velvet cake</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-                    <div class="price">45.90 €</div>
+                    <img alt="3-tier red velvet cake" height="200" src="assets/best-2.jpg" width="300"/>
+                    <h3>Chocolate Corne</h3>
+                    <p>A rich and flaky croissant with a luscious chocolate filling, offering a decadent twist on a classic favorite for all chocolate lovers.</p>
+                    <div class="price">Rp. 25.000</div>
                     <a class="btn" href="#">
                         Add to Cart
                     </a>
                 </div>
 
                 <div class="product">
-                    <img alt="3-tier red velvet cake" height="200" src="https://storage.googleapis.com/a1aa/image/HVyhjTV269qpFd7vnDt472ZJSrN55DQ4b4yDoLAyLSqCpreJA.jpg" width="300"/>
-                    <h3>3-tier red velvet cake</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-                    <div class="price">45.90 €</div>
+                    <img alt="3-tier red velvet cake" height="200" src="assets/best-3.jpg" width="300"/>
+                    <h3>Mirror Glaze Cake</h3>
+                    <p>An elegant cake coated with a stunning, glossy mirror glaze, combining exquisite flavors and eye-catching beauty for any special occasion.</p>
+                    <div class="price">Rp. 105.000</div>
                     <a class="btn" href="#">
                         Add to Cart
                     </a>
@@ -246,15 +257,39 @@
            </section>
     </main>
     
+    <!-- FOOTER -->
     <footer>
-        <p>© 
-            <span>Copyright</span>
-            <strong>Neronyaa</strong>
-            <span>All Rights Reserved.</span>
-        </p>
-        <div class="credits">
-            Designed & Created By
-            <a href="https://github.com/benyaminkristiawan">benyaminkristiawan</a>
+        <div class="back-to-top">
+            <a href="#header"><i class="fas fa-chevron-up"></i></a>
+        </div>
+
+        <div class="container">
+            <img src="assets/full-logo-neronyaa.png" alt="Bready Bake logo"/>
+            <div class="content">
+                <h2>Subscribe To Our Newsletter</h2>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="your email address" />
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            
+            <p>© 
+                <span>Copyright</span>
+                <strong><b>Neronyaa</b></strong>
+                <span>All Rights Reserved.</span>
+            </p>
+            <div class="credits">
+                Designed & Created By
+                <a href="https://github.com/benyaminkristiawan"><b>benyaminkristiawan</b></a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </footer>
 </body>
