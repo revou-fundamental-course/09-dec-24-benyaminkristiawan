@@ -827,3 +827,12 @@ footer {
         height: auto;
     }
 }
+
+.sr-only {
+    position: absolute;
+    left: -10000px; /* Moves the element off-screen */
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0); /* Hides the element visually */
+}
